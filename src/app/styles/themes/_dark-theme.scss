@@ -1,4 +1,4 @@
-$colors: (
+$colors-roles: (
     primary: #F24405,
     surface-tint: #FFB5A0,
     on-primary: #561F0F,
@@ -49,3 +49,8 @@ $colors: (
     surface-container-high: #2F2921,
     surface-container-highest: #3B342B,
 );
+
+@mixin variables {
+    --dynamic-color-test: lightblue;
+}
+

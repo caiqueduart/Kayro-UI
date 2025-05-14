@@ -1,4 +1,4 @@
-$colors: (
+$colors-roles: (
     primary: #F24405,
     surface-tint: #8F4B38,
     on-primary: #FFFFFF,
@@ -49,3 +49,7 @@ $colors: (
     surface-container-high: #F3E6DA,
     surface-container-highest: #EDE0D4,
 );
+
+@mixin variables {
+    --dynamic-color-test: blue;
+}

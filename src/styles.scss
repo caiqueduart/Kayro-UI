@@ -1,15 +1,32 @@
 @use '@angular/material' as mat;
 @use 'app/styles/themes/dark-theme' as dark-theme;
+@use 'app/styles/themes/light-theme' as light-theme;
+@use 'app/styles/global-variables' as global-variables;
 
 html {
-    @include mat.theme((
-        color: (
-            theme-type: dark,
-        ),
-        typography: Roboto,
-        density: 0,
-    ));
-    @include mat.theme-overrides(dark-theme.$colors);
+    .dark-theme {
+        @include mat.theme((
+            color: (
+                theme-type: dark,
+            ),
+            typography: Roboto,
+            density: 0,
+        ));
+        @include mat.theme-overrides(dark-theme.$colors-roles);
+        @include dark-theme.variables;
+    }
+
+    .light-theme {
+        @include mat.theme((
+            color: (
+                theme-type: light,
+            ),
+            typography: Roboto,
+            density: 0,
+        ));
+        @include mat.theme-overrides(light-theme.$colors-roles);
+        @include light-theme.variables;
+    }
 }
 
 html, body { height: 100%; }
