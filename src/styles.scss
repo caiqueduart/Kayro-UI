@@ -3,7 +3,7 @@
 @use 'app/styles/themes/light-theme' as light-theme;
 @use 'app/styles/global-variables' as global-variables;
 
-html {
+:root {
     .dark-theme {
         @include mat.theme((
             color: (
@@ -13,7 +13,7 @@ html {
             density: 0,
         ));
         @include mat.theme-overrides(dark-theme.$colors-roles);
-        @include dark-theme.variables;
+        @include dark-theme.colors-variables;
     }
 
     .light-theme {
@@ -25,7 +25,7 @@ html {
             density: 0,
         ));
         @include mat.theme-overrides(light-theme.$colors-roles);
-        @include light-theme.variables;
+        @include light-theme.colors-variables;
     }
 }
 

@@ -50,7 +50,9 @@ $colors-roles: (
     surface-container-highest: #3B342B,
 );
 
-@mixin variables {
-    --dynamic-color-test: lightblue;
+@mixin colors-variables {
+    @each $key, $value in $colors-roles {
+        --kay-sys-color-#{$key}: #{$value};
+    }
 }
 
