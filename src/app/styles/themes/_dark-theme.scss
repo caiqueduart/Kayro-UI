@@ -51,8 +51,55 @@ $colors-roles: (
 );
 
 @mixin colors-variables {
-    @each $key, $value in $colors-roles {
-        --kay-sys-color-#{$key}: #{$value};
-    }
+    --kay-sys-color-primary: #{map-get($colors-roles, primary)};
+    --kay-sys-color-surface-tint: #{map-get($colors-roles, surface-tint)};
+    --kay-sys-color-on-primary: #{map-get($colors-roles, on-primary)};
+    --kay-sys-color-primary-container: #{map-get($colors-roles, primary-container)};
+    --kay-sys-color-on-primary-container: #{map-get($colors-roles, on-primary-container)};
+    --kay-sys-color-secondary: #{map-get($colors-roles, secondary)};
+    --kay-sys-color-on-secondary: #{map-get($colors-roles, on-secondary)};
+    --kay-sys-color-secondary-container: #{map-get($colors-roles, secondary-container)};
+    --kay-sys-color-on-secondary-container: #{map-get($colors-roles, on-secondary-container)};
+    --kay-sys-color-tertiary: #{map-get($colors-roles, tertiary)};
+    --kay-sys-color-on-tertiary: #{map-get($colors-roles, on-tertiary)};
+    --kay-sys-color-tertiary-container: #{map-get($colors-roles, tertiary-container)};
+    --kay-sys-color-on-tertiary-container: #{map-get($colors-roles, on-tertiary-container)};
+    --kay-sys-color-error: #{map-get($colors-roles, error)};
+    --kay-sys-color-on-error: #{map-get($colors-roles, on-error)};
+    --kay-sys-color-error-container: #{map-get($colors-roles, error-container)};
+    --kay-sys-color-on-error-container: #{map-get($colors-roles, on-error-container)};
+    --kay-sys-color-background: #{map-get($colors-roles, background)};
+    --kay-sys-color-on-background: #{map-get($colors-roles, on-background)};
+    --kay-sys-color-surface: #{map-get($colors-roles, surface)};
+    --kay-sys-color-on-surface: #{map-get($colors-roles, on-surface)};
+    --kay-sys-color-surface-variant: #{map-get($colors-roles, surface-variant)};
+    --kay-sys-color-on-surface-variant: #{map-get($colors-roles, on-surface-variant)};
+    --kay-sys-color-outline: #{map-get($colors-roles, outline)};
+    --kay-sys-color-outline-variant: #{map-get($colors-roles, outline-variant)};
+    --kay-sys-color-shadow: #{map-get($colors-roles, shadow)};
+    --kay-sys-color-scrim: #{map-get($colors-roles, scrim)};
+    --kay-sys-color-inverse-surface: #{map-get($colors-roles, inverse-surface)};
+    --kay-sys-color-inverse-on-surface: #{map-get($colors-roles, inverse-on-surface)};
+    --kay-sys-color-inverse-primary: #{map-get($colors-roles, inverse-primary)};
+    --kay-sys-color-primary-fixed: #{map-get($colors-roles, primary-fixed)};
+    --kay-sys-color-on-primary-fixed: #{map-get($colors-roles, on-primary-fixed)};
+    --kay-sys-color-primary-fixed-dim: #{map-get($colors-roles, primary-fixed-dim)};
+    --kay-sys-color-on-primary-fixed-variant: #{map-get($colors-roles, on-primary-fixed-variant)};
+    --kay-sys-color-secondary-fixed: #{map-get($colors-roles, secondary-fixed)};
+    --kay-sys-color-on-secondary-fixed: #{map-get($colors-roles, on-secondary-fixed)};
+    --kay-sys-color-secondary-fixed-dim: #{map-get($colors-roles, secondary-fixed-dim)};
+    --kay-sys-color-on-secondary-fixed-variant: #{map-get($colors-roles, on-secondary-fixed-variant)};
+    --kay-sys-color-tertiary-fixed: #{map-get($colors-roles, tertiary-fixed)};
+    --kay-sys-color-on-tertiary-fixed: #{map-get($colors-roles, on-tertiary-fixed)};
+    --kay-sys-color-tertiary-fixed-dim: #{map-get($colors-roles, tertiary-fixed-dim)};
+    --kay-sys-color-on-tertiary-fixed-variant: #{map-get($colors-roles, on-tertiary-fixed-variant)};
+    --kay-sys-color-surface-dim: #{map-get($colors-roles, surface-dim)};
+    --kay-sys-color-surface-bright: #{map-get($colors-roles, surface-bright)};
+    --kay-sys-color-surface-container-lowest: #{map-get($colors-roles, surface-container-lowest)};
+    --kay-sys-color-surface-container-low: #{map-get($colors-roles, surface-container-low)};
+    --kay-sys-color-surface-container: #{map-get($colors-roles, surface-container)};
+    --kay-sys-color-surface-container-high: #{map-get($colors-roles, surface-container-high)};
+    --kay-sys-color-surface-container-highest: #{map-get($colors-roles, surface-container-highest)};
 }
+
 
