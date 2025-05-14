@@ -1,7 +1,7 @@
 @use '@angular/material' as mat;
 @use 'app/styles/themes/dark-theme' as dark-theme;
 @use 'app/styles/themes/light-theme' as light-theme;
-@use 'app/styles/global-variables' as global-variables;
+@use 'app/styles/global/variables' as global-variables;
 
 :root {
     .dark-theme {
