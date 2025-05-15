@@ -9,7 +9,7 @@
             color: (
                 theme-type: dark,
             ),
-            typography: Roboto,
+            typography: Inter,
             density: 0,
         ));
         @include mat.theme-overrides(dark-theme.$colors-roles);
@@ -21,7 +21,7 @@
             color: (
                 theme-type: light,
             ),
-            typography: Roboto,
+            typography: Inter,
             density: 0,
         ));
         @include mat.theme-overrides(light-theme.$colors-roles);
@@ -29,5 +29,12 @@
     }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, "Arial", sans-serif;
+    background-color: var(--kay-sys-color-surface);
+}
