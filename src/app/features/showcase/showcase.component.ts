@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-showcase',
+  selector: 'kay-showcase',
   imports: [],
   templateUrl: './showcase.component.html',
   styleUrl: './showcase.component.scss'
