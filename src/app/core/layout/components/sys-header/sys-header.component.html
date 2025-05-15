@@ -1,17 +1,9 @@
 <div>
     <span></span>
     <nav>
-        <kay-nav-category name="Guide"
-                          [itens]="[
-                              {name: 'Introdução', routerTo: ''},
-                              {name: 'Instalação', routerTo: ''}
-                          ]">
-        </kay-nav-category>
-        <kay-nav-category name="Guide"
-                          [itens]="[
-                              {name: 'Instalação Tutorial', routerTo: ''},
-                              {name: 'Instalação', routerTo: ''}
-                          ]">
+        <kay-nav-category title="Guide">
+            <a routerLink="" kay-nav-category-item>Introdução</a>
+            <a routerLink="" kay-nav-category-item>Instalação</a>
         </kay-nav-category>
     </nav>
 </div>

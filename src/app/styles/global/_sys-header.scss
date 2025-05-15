@@ -1,0 +1,12 @@
+.kay-nav-category-item {
+    display: block;
+    text-decoration: none;
+    text-wrap: nowrap;
+    padding: 4px;
+
+    &:hover {
+        transition: 0.3s;
+        color: var(--kay-sys-color-primary);
+    }
+}
+
