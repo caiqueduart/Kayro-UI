@@ -1,0 +1,61 @@
+.nav-category {
+    display: inline-block;
+    position: relative;
+
+    &-name {
+        border: none;
+        font-size: 1em;
+        cursor: pointer;
+        background-color: transparent;
+        margin-bottom: 12px;
+        display: flex;
+        place-items: center;
+        gap: 8px;
+
+        &:hover {
+            transition: 0.3s;
+            opacity: 0.6;
+        }
+    }
+
+    &-list {
+        margin: 0;
+        list-style: none;
+        padding: 10px;
+        position: absolute;
+        background-color: var(--kay-sys-color-surface-container);
+        border-radius: var(--medium-border-radius);
+        border: 1px solid var(--kay-sys-color-outline-variant);
+        animation: showing 0.3s;
+
+        &.isHidden {
+            display: none;
+        }
+
+        &-item {
+            padding: 8px;
+
+            &:hover {
+                a {
+                    transition: 0.3s;
+                    color: var(--kay-sys-color-primary);
+                }
+            }
+
+            a {
+                text-decoration: none;
+                text-wrap: nowrap;
+            }
+        }
+    }
+}
+
+@keyframes showing {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
