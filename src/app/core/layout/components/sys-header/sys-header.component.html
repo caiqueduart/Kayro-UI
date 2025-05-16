@@ -10,7 +10,7 @@
 
             <kay-nav-category title="Componentes">
                 <a routerLink="" kay-nav-category-item>Botões Animados</a>
-                <a routerLink="" kay-nav-category-item>Cards Responsívos</a>
+                <a routerLink="" kay-nav-category-item>Cards Responsivos</a>
                 <a routerLink="" kay-nav-category-item>Links Dinâmicos</a>
                 <a routerLink="" kay-nav-category-item>Grid</a>
                 <a routerLink="" kay-nav-category-item>Cards Animados</a>
@@ -31,22 +31,36 @@
         </div>
 
         <div class="sys-header-nav-theme-button">
-            <mat-slide-toggle aria-label="Alterar tema" checked="true" (change)="toggleTheme()"></mat-slide-toggle>
+            <mat-slide-toggle
+                aria-label="Alterar tema"
+                matTooltip="Alterar tema"
+                checked="true"
+                (change)="toggleTheme()">
+            </mat-slide-toggle>
         </div>
 
         <ul class="sys-header-nav-social-area">
             <li>
-                <a href="" aria-label="acessar Github">
-                    <img src="social-icons/github.svg" alt="Github">
-                </a>
-            </li>
-            <li>
-                <a href="" aria-label="acessar LinkedIn">
+                <a href="https://www.linkedin.com/in/caique-duarte-0822a5209"
+                   target="_blank" rel="noopener"
+                   aria-label="acessar LinkedIn"
+                   matTooltip="Acessar LinkedIn 🡥">
                     <img src="social-icons/linkedIn.svg" alt="LinkedIn">
                 </a>
             </li>
             <li>
-                <a href="" aria-label="acessar X">
+                <a href="https://github.com/caiqueduart"
+                   target="_blank" rel="noopener"
+                   aria-label="acessar Github"
+                   matTooltip="Acessar Github 🡥">
+                    <img src="social-icons/github.svg" alt="Github">
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/caique_duartt"
+                   target="_blank" rel="noopener"
+                   aria-label="acessar X"
+                   matTooltip="Acessar X 🡥">
                     <img src="social-icons/x.svg" alt="X">
                 </a>
             <li>

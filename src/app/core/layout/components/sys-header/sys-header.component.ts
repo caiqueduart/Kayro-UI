@@ -4,6 +4,7 @@ import {NavCategoryItemDirective} from './directives/nav-category-item.directive
 import {RouterLink} from '@angular/router';
 import {MatSlideToggle} from '@angular/material/slide-toggle';
 import {HandleThemeService} from '../../../services/handle-theme.service';
+import {MatTooltip} from '@angular/material/tooltip';
 
 @Component({
   selector: 'header[kay-sys-header]',
@@ -11,7 +12,8 @@ import {HandleThemeService} from '../../../services/handle-theme.service';
         NavCategoryComponent,
         NavCategoryItemDirective,
         RouterLink,
-        MatSlideToggle
+        MatSlideToggle,
+        MatTooltip
     ],
   templateUrl: './sys-header.component.html',
   styleUrl: './sys-header.component.scss'
