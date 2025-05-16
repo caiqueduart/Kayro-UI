@@ -5,16 +5,15 @@ import { Injectable } from '@angular/core';
 })
 export class HandleThemeService {
     toggleTheme(): void {
-        const body = document.querySelector('body');
-        const bodyClassList = body?.classList;
+        const bodyClassList = document.querySelector('body')?.classList;
         const bodyClassListContainsDarkTheme = bodyClassList?.contains('dark-theme');
 
         if(bodyClassListContainsDarkTheme) {
-            body?.classList.remove('dark-theme');
-            body?.classList.add('light-theme');
+            bodyClassList?.remove('dark-theme');
+            bodyClassList?.add('light-theme');
         } else {
-            body?.classList.remove('light-theme');
-            body?.classList.add('dark-theme');
+            bodyClassList?.remove('light-theme');
+            bodyClassList?.add('dark-theme');
         }
     }
 }
