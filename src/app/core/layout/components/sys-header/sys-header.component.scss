@@ -6,6 +6,10 @@
     padding: 22px 64px;
     margin: 0;
 
+    &-brand {
+        font-weight: 700;
+    }
+
     &-nav {
         display: flex;
         gap: 24px;

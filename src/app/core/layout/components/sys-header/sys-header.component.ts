@@ -3,6 +3,7 @@ import {NavCategoryComponent} from './sub-components/nav-category/nav-category.c
 import {NavCategoryItemDirective} from './directives/nav-category-item.directive';
 import {RouterLink} from '@angular/router';
 import {MatSlideToggle} from '@angular/material/slide-toggle';
+import {HandleThemeService} from '../../../services/handle-theme.service';
 
 @Component({
   selector: 'header[kay-sys-header]',
@@ -15,4 +16,10 @@ import {MatSlideToggle} from '@angular/material/slide-toggle';
   templateUrl: './sys-header.component.html',
   styleUrl: './sys-header.component.scss'
 })
-export class SysHeaderComponent { }
+export class SysHeaderComponent {
+    constructor(private handleThemeService: HandleThemeService) {}
+
+    toggleTheme(): void {
+        this.handleThemeService.toggleTheme();
+    }
+}
