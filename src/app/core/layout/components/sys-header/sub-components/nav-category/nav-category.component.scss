@@ -6,11 +6,10 @@
         border: none;
         font-size: 1em;
         cursor: pointer;
-        background-color: transparent;
-        margin-bottom: 12px;
         display: flex;
-        place-items: center;
         gap: 8px;
+        place-items: center;
+        background-color: transparent;
 
         &:hover {
             transition: 0.3s;
@@ -20,8 +19,8 @@
 
     &-list {
         margin: 0;
-        list-style: none;
         padding: 10px;
+        list-style: none;
         position: absolute;
         background-color: var(--kay-sys-color-surface-container);
         border-radius: var(--medium-border-radius);

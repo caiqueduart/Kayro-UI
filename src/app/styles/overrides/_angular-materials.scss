@@ -1,0 +1,11 @@
+@use  '@angular/material' as mat;
+
+@include mat.slide-toggle-overrides((
+    with-icon-handle-size: 20px,
+    pressed-handle-size: 24px,
+    track-height: 24px,
+    track-width: 44px,
+    track-outline-width: 1px,
+    unselected-with-icon-handle-horizontal-margin: 0 0 0 2px,
+    selected-with-icon-handle-horizontal-margin: 0 22px,
+));

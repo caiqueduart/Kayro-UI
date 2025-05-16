@@ -1,0 +1,30 @@
+.sys-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--kay-sys-color-outline-variant);
+    align-items: center;
+    padding: 22px 64px;
+    margin: 0;
+
+    &-nav {
+        display: flex;
+        gap: 24px;
+
+        &-menu {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        &-social-area {
+            padding: 0;
+            margin: 0;
+            gap: 24px;
+            display: flex;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+}
