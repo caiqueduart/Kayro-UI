@@ -4,6 +4,7 @@
 @use 'app/styles/global/_sys-header';
 @use 'app/styles/overrides/_angular-materials';
 @use 'app/styles/global/variables';
+@use "app/styles/utils/shapes";
 
 :root {
     .dark-theme {

@@ -1,5 +1,10 @@
 :root {
+    /*--- BORDER RADIUS ---*/
     --low-border-radius: 8px;
     --medium-border-radius: 16px;
     --hight-border-radius: 32px;
+
+
+    /*--- GRADIENTS ---*/
+    --linear-primary-gradient: linear-gradient(90deg,rgba(242, 68, 5, 1) 0%, rgba(237, 106, 17, 1) 100%);
 }

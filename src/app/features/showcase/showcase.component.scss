@@ -1,0 +1,74 @@
+.showcase {
+    max-width: 1080px;
+    margin: auto;
+
+    &-intro {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 120px;
+
+        &-content {
+            max-width: 500px;
+
+            &-title,
+            &-subtitle {
+                margin: 0;
+            }
+
+            &-title {
+                background: var(--linear-primary-gradient);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 4rem;
+            }
+
+            &-subtitle {
+                font-size: 3.5rem;
+                line-height: 1;
+            }
+
+            &-description {
+                font-size: 2rem;
+                margin: 32px 0;
+            }
+
+            &-buttons {
+                display: flex;
+                gap: 16px;
+
+                button:not(:first-child) {
+                    background-color: var(--kay-sys-color-surface-variant);
+                    color: var(--kay-sys-color-on-surface-variant);
+                }
+            }
+
+        }
+
+        &-brand {
+            position: relative;
+
+            &-shine {
+                position: absolute;
+                right: -120px;
+                bottom: -200px;
+                pointer-events: none;
+                animation: shining 20s infinite ease-in-out;
+            }
+        }
+    }
+}
+
+@keyframes shining {
+    0%, 100% {
+        opacity: 0.7;
+        transform: scale(1.2);
+        filter: brightness(1.5) drop-shadow(0 0 0 var(--kay-sys-color-primary));
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1);
+        filter: brightness(1.2);
+    }
+}
