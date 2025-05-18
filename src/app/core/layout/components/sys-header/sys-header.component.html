@@ -1,70 +1,71 @@
 <div class="sys-header">
-    <span class="sys-header-brand">Kayro UI</span>
+    <div class="sys-header-content">
+        <span class="sys-header-content-brand">Kayro UI</span>
+        <nav class="sys-header-content-nav">
+            <div class="sys-header-content-nav-menu">
+                <kay-nav-category title="Guide">
+                    <a routerLink="" kay-nav-category-item>Introdução</a>
+                    <a routerLink="" kay-nav-category-item>Instalação</a>
+                </kay-nav-category>
 
-    <nav class="sys-header-nav">
-        <div class="sys-header-nav-menu">
-            <kay-nav-category title="Guide">
-                <a routerLink="" kay-nav-category-item>Introdução</a>
-                <a routerLink="" kay-nav-category-item>Instalação</a>
-            </kay-nav-category>
+                <kay-nav-category title="Componentes">
+                    <a routerLink="" kay-nav-category-item>Botões Animados</a>
+                    <a routerLink="" kay-nav-category-item>Cards Responsivos</a>
+                    <a routerLink="" kay-nav-category-item>Links Dinâmicos</a>
+                    <a routerLink="" kay-nav-category-item>Grid</a>
+                    <a routerLink="" kay-nav-category-item>Cards Animados</a>
+                    <a routerLink="" kay-nav-category-item>Títulos</a>
+                </kay-nav-category>
 
-            <kay-nav-category title="Componentes">
-                <a routerLink="" kay-nav-category-item>Botões Animados</a>
-                <a routerLink="" kay-nav-category-item>Cards Responsivos</a>
-                <a routerLink="" kay-nav-category-item>Links Dinâmicos</a>
-                <a routerLink="" kay-nav-category-item>Grid</a>
-                <a routerLink="" kay-nav-category-item>Cards Animados</a>
-                <a routerLink="" kay-nav-category-item>Títulos</a>
-            </kay-nav-category>
+                <kay-nav-category title="Showcase">
+                    <a routerLink="" kay-nav-category-item>Início</a>
+                </kay-nav-category>
 
-            <kay-nav-category title="Showcase">
-                <a routerLink="" kay-nav-category-item>Início</a>
-            </kay-nav-category>
+                <kay-nav-category title="v1.0.0">
+                    <a routerLink="" kay-nav-category-item>v0.0.9</a>
+                    <a routerLink="" kay-nav-category-item>v0.0.8</a>
+                    <a routerLink="" kay-nav-category-item>v0.0.7</a>
+                    <a routerLink="" kay-nav-category-item>v0.0.6</a>
+                    <a routerLink="" kay-nav-category-item>v0.0.5</a>
+                </kay-nav-category>
+            </div>
 
-            <kay-nav-category title="v1.0.0">
-                <a routerLink="" kay-nav-category-item>v0.0.9</a>
-                <a routerLink="" kay-nav-category-item>v0.0.8</a>
-                <a routerLink="" kay-nav-category-item>v0.0.7</a>
-                <a routerLink="" kay-nav-category-item>v0.0.6</a>
-                <a routerLink="" kay-nav-category-item>v0.0.5</a>
-            </kay-nav-category>
-        </div>
+            <div class="sys-header-content-nav-theme-button">
+                <mat-slide-toggle
+                    #toggleThemeButton
+                    aria-label="Alterar tema"
+                    matTooltip="Alterar tema"
+                    checked="true"
+                    (change)="toggleTheme()">
+                </mat-slide-toggle>
+            </div>
 
-        <div class="sys-header-nav-theme-button">
-            <mat-slide-toggle
-                #toggleThemeButton
-                aria-label="Alterar tema"
-                matTooltip="Alterar tema"
-                checked="true"
-                (change)="toggleTheme()">
-            </mat-slide-toggle>
-        </div>
-
-        <ul class="sys-header-nav-social-area">
-            <li>
-                <a href="https://www.linkedin.com/in/caique-duarte-0822a5209"
-                   target="_blank" rel="noopener"
-                   aria-label="acessar LinkedIn"
-                   matTooltip="Acessar LinkedIn 🡥">
-                    <img ngSrc="/icons/social/linkedIn.svg" alt="LinkedIn" height="24" width="24">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/caiqueduart"
-                   target="_blank" rel="noopener"
-                   aria-label="acessar Github"
-                   matTooltip="Acessar Github 🡥">
-                    <img ngSrc="/icons/social/github.svg" alt="Github" height="24" width="24">
-                </a>
-            </li>
-            <li>
-                <a href="https://x.com/caique_duartt"
-                   target="_blank" rel="noopener"
-                   aria-label="acessar X"
-                   matTooltip="Acessar X 🡥">
-                    <img ngSrc="/icons/social/x.svg" alt="X" height="24" width="24">
-                </a>
-            <li>
-        </ul>
-    </nav>
+            <ul class="sys-header-content-nav-social-area">
+                <li>
+                    <a href="https://www.linkedin.com/in/caique-duarte-0822a5209"
+                       target="_blank" rel="noopener"
+                       aria-label="acessar LinkedIn"
+                       matTooltip="Acessar LinkedIn 🡥">
+                        <img ngSrc="/icons/social/linkedIn.svg" alt="LinkedIn" height="24" width="24">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/caiqueduart"
+                       target="_blank" rel="noopener"
+                       aria-label="acessar Github"
+                       matTooltip="Acessar Github 🡥">
+                        <img ngSrc="/icons/social/github.svg" alt="Github" height="24" width="24">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/caique_duartt"
+                       target="_blank" rel="noopener"
+                       aria-label="acessar X"
+                       matTooltip="Acessar X 🡥">
+                        <img ngSrc="/icons/social/x.svg" alt="X" height="24" width="24">
+                    </a>
+                <li>
+            </ul>
+        </nav>
+    </div>
 </div>
