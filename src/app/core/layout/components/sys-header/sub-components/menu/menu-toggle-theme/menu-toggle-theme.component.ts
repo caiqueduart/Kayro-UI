@@ -1,8 +1,8 @@
 import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {MatSlideToggle} from "@angular/material/slide-toggle";
 import {MatTooltip} from "@angular/material/tooltip";
-import {HandleThemeService} from '../../../../../services/handle-theme.service';
-import {moonIcon, sunIcon} from '../../models/toggle-theme-button.model';
+import {HandleThemeService} from '../../../../../../services/handle-theme.service';
+import {moonIcon, sunIcon} from '../../../models/toggle-theme-button.model';
 
 @Component({
   selector: 'kay-menu-toggle-theme',
