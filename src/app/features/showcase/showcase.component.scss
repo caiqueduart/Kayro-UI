@@ -47,12 +47,13 @@
 
         &-brand {
             position: relative;
+            pointer-events: none;
+            user-select: none;
 
             &-shine {
                 position: absolute;
                 right: -120px;
                 bottom: -200px;
-                pointer-events: none;
                 animation: shining 20s infinite ease-in-out;
             }
         }
