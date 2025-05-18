@@ -1,41 +1,18 @@
 <div class="sys-header">
     <div class="sys-header-content">
         <span class="sys-header-content-brand">Kayro UI</span>
-        <div class="sys-header-content-menu">
+        <menu class="sys-header-content-menu">
             <nav class="sys-header-content-menu-nav">
                 <kay-header-navigation></kay-header-navigation>
             </nav>
 
-            <div class="sys-header-content-menu-theme-button">
+            <section class="sys-header-content-menu-theme-button">
                 <kay-menu-toggle-theme></kay-menu-toggle-theme>
-            </div>
+            </section>
 
-            <ul class="sys-header-content-menu-social-area">
-                <li>
-                    <a href="https://www.linkedin.com/in/caique-duarte-0822a5209"
-                       target="_blank" rel="noopener"
-                       aria-label="acessar LinkedIn"
-                       matTooltip="Acessar LinkedIn 🡥">
-                        <img ngSrc="/icons/social/linkedIn.svg" alt="LinkedIn" height="24" width="24">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/caiqueduart"
-                       target="_blank" rel="noopener"
-                       aria-label="acessar Github"
-                       matTooltip="Acessar Github 🡥">
-                        <img ngSrc="/icons/social/github.svg" alt="Github" height="24" width="24">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://x.com/caique_duartt"
-                       target="_blank" rel="noopener"
-                       aria-label="acessar X"
-                       matTooltip="Acessar X 🡥">
-                        <img ngSrc="/icons/social/x.svg" alt="X" height="24" width="24">
-                    </a>
-                <li>
-            </ul>
-        </div>
+            <section class="sys-header-content-menu-social-area">
+                <kay-menu-social></kay-menu-social>
+            </section>
+        </menu>
     </div>
 </div>
