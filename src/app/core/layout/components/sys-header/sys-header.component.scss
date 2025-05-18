@@ -18,13 +18,8 @@
 
         &-menu {
             display: flex;
+            align-items: center;
             gap: 24px;
-
-            &-nav {
-                display: flex;
-                gap: 24px;
-                align-items: center;
-            }
 
             &-social-area {
                 padding: 0;
@@ -39,7 +34,7 @@
         }
 
         @include responsive-device('desktop') {
-            background-color: red;
+
         }
     }
 
