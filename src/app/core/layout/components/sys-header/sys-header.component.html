@@ -1,8 +1,8 @@
 <div class="sys-header">
     <div class="sys-header-content">
         <span class="sys-header-content-brand">Kayro UI</span>
-        <nav class="sys-header-content-nav">
-            <div class="sys-header-content-nav-menu">
+        <div class="sys-header-content-menu">
+            <nav class="sys-header-content-menu-nav">
                 <kay-nav-category title="Guide">
                     <a routerLink="" kay-nav-category-item>Introdução</a>
                     <a routerLink="" kay-nav-category-item>Instalação</a>
@@ -28,13 +28,13 @@
                     <a routerLink="" kay-nav-category-item>v0.0.6</a>
                     <a routerLink="" kay-nav-category-item>v0.0.5</a>
                 </kay-nav-category>
+            </nav>
+
+            <div class="sys-header-content-menu-theme-button">
+                <kay-menu-toggle-theme></kay-menu-toggle-theme>
             </div>
 
-            <div class="sys-header-content-nav-theme-button">
-                <kay-nav-toggle-theme></kay-nav-toggle-theme>
-            </div>
-
-            <ul class="sys-header-content-nav-social-area">
+            <ul class="sys-header-content-menu-social-area">
                 <li>
                     <a href="https://www.linkedin.com/in/caique-duarte-0822a5209"
                        target="_blank" rel="noopener"
@@ -60,6 +60,6 @@
                     </a>
                 <li>
             </ul>
-        </nav>
+        </div>
     </div>
 </div>

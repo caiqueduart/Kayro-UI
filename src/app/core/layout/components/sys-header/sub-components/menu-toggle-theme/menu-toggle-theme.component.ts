@@ -5,15 +5,15 @@ import {HandleThemeService} from '../../../../../services/handle-theme.service';
 import {moonIcon, sunIcon} from '../../models/toggle-theme-button.model';
 
 @Component({
-  selector: 'kay-nav-toggle-theme',
+  selector: 'kay-menu-toggle-theme',
     imports: [
         MatSlideToggle,
         MatTooltip
     ],
-  templateUrl: './nav-toggle-theme.component.html',
-  styleUrl: './nav-toggle-theme.component.scss'
+  templateUrl: './menu-toggle-theme.component.html',
+  styleUrl: './menu-toggle-theme.component.scss'
 })
-export class NavToggleThemeComponent implements AfterViewInit {
+export class MenuToggleThemeComponent implements AfterViewInit {
     constructor(private handleThemeService: HandleThemeService) {}
 
     @ViewChild('toggleThemeButton', { read: ElementRef }) element: ElementRef | undefined;
