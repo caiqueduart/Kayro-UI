@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {NavCategoryComponent} from "../nav-category/nav-category.component";
-import {NavCategoryItemDirective} from "../../../directives/nav-category-item.directive";
+import {NavCategoryItemDirective} from "../directives/nav-category-item.directive";
 import {RouterLink} from "@angular/router";
 
 @Component({
