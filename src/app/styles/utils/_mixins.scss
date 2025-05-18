@@ -6,13 +6,13 @@
     }
 
     @if($device == 'tablet') {
-        @media (min-width: 768px) {
+        @media (max-width: 768px) {
             @content;
         }
     }
 
     @if($device == 'desktop') {
-        @media (min-width: 1200px) {
+        @media (max-width: 1200px) {
             @content;
         }
     }

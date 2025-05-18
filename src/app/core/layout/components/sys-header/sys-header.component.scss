@@ -3,7 +3,7 @@
 .sys-header {
     border-bottom: 1px solid var(--kay-sys-color-outline-variant);
     user-select: none;
-    padding: 22px 0;
+    padding: 22px;
 
     &-content {
         display: flex;
@@ -38,8 +38,8 @@
             }
         }
 
-        @include responsive-device('mobile') {
-
+        @include responsive-device('desktop') {
+            background-color: red;
         }
     }
 
