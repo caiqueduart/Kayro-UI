@@ -1,0 +1,52 @@
+.kay-ui-compatibility {
+    margin: auto;
+    &-title {
+        font-size: 2.625rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 16px;
+
+        span {
+            color: var(--kay-sys-color-primary);
+        }
+    }
+
+    &-description {
+        text-align: center;
+        color: var(--kay-sys-color-on-surface-variant);
+    }
+
+    &-frameworks-list {
+        display: flex;
+        gap: 80px;
+        margin-top: 64px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+
+        &-item {
+            display: grid;
+            gap: 16px;
+            list-style: none;
+
+            img {
+                background-color: var(--kay-sys-color-surface-container);
+                border-radius: var(--hight-border-radius);
+                padding: 16px;
+                transition: 0.2s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--kay-sys-color-surface-bright);
+                    scale: 1.05;
+                }
+            }
+
+            span {
+                text-align: center;
+                font-size: 2rem;
+                opacity: 0.6;
+            }
+        }
+    }
+}

@@ -6,6 +6,7 @@ import {MatSlideToggle} from '@angular/material/slide-toggle';
 import {HandleThemeService} from '../../../services/handle-theme.service';
 import {MatTooltip} from '@angular/material/tooltip';
 import {moonIcon, sunIcon} from './models/toggle-theme-button.model';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'header[kay-sys-header]',
@@ -14,7 +15,8 @@ import {moonIcon, sunIcon} from './models/toggle-theme-button.model';
         NavCategoryItemDirective,
         RouterLink,
         MatSlideToggle,
-        MatTooltip
+        MatTooltip,
+        NgOptimizedImage
     ],
   templateUrl: './sys-header.component.html',
   styleUrl: './sys-header.component.scss'
