@@ -1,27 +1,11 @@
 <div class="header-navigation">
-    <kay-nav-category title="Guide">
-        <a routerLink="" kay-header-nav-category-item>Introdução</a>
-        <a routerLink="" kay-header-nav-category-item>Instalação</a>
-    </kay-nav-category>
-
-    <kay-nav-category title="Componentes">
-        <a routerLink="" kay-header-nav-category-item>Botões Animados</a>
-        <a routerLink="" kay-header-nav-category-item>Cards Responsivos</a>
-        <a routerLink="" kay-header-nav-category-item>Links Dinâmicos</a>
-        <a routerLink="" kay-header-nav-category-item>Grid</a>
-        <a routerLink="" kay-header-nav-category-item>Cards Animados</a>
-        <a routerLink="" kay-header-nav-category-item>Títulos</a>
-    </kay-nav-category>
-
-    <kay-nav-category title="Showcase">
-        <a routerLink="" kay-header-nav-category-item>Início</a>
-    </kay-nav-category>
-
-    <kay-nav-category title="v1.0.0">
-        <a routerLink="" kay-header-nav-category-item>v0.0.9</a>
-        <a routerLink="" kay-header-nav-category-item>v0.0.8</a>
-        <a routerLink="" kay-header-nav-category-item>v0.0.7</a>
-        <a routerLink="" kay-header-nav-category-item>v0.0.6</a>
-        <a routerLink="" kay-header-nav-category-item>v0.0.5</a>
-    </kay-nav-category>
+    @for (category of systemNavigationCategories; track category) {
+        <kay-nav-category [title]="category.title">
+            @for (categoryItem of category.items; track categoryItem) {
+                <a [routerLink]="categoryItem.route" kay-header-nav-category-item>
+                    {{ categoryItem.name }}
+                </a>
+            }
+        </kay-nav-category>
+    }
 </div>

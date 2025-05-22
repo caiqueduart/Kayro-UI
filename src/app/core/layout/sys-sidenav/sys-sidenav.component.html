@@ -1,13 +1,18 @@
 <div class="sys-sidenav">
     <mat-accordion class="sys-sidenav-navigation" multi>
-        <mat-expansion-panel class="sys-sidenav-navigation-item">
-            <mat-expansion-panel-header class="sys-sidenav-navigation-dropdown-toggle">
-                <mat-panel-title>Guide</mat-panel-title>
-            </mat-expansion-panel-header>
-            <ul class="sys-sidenav-navigation-item-dropped-list">
-                <li><a>Introdução</a></li>
-                <li><a>Instalação</a></li>
-            </ul>
-        </mat-expansion-panel>
+
+        @for (category of systemNavigationCategories; track category) {
+            <mat-expansion-panel class="sys-sidenav-navigation-item">
+                <mat-expansion-panel-header class="sys-sidenav-navigation-dropdown-toggle">
+                    <mat-panel-title>{{ category.title }}</mat-panel-title>
+                </mat-expansion-panel-header>
+
+                <ul class="sys-sidenav-navigation-item-dropped-list">
+                    @for (categoryItem of category.items; track categoryItem) {
+                        <li><a [routerLink]="categoryItem.route">{{ categoryItem.name }}</a></li>
+                    }
+                </ul>
+            </mat-expansion-panel>
+        }
     </mat-accordion>
 </div>

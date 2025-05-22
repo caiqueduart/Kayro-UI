@@ -5,13 +5,25 @@ export const SYSTEM_NAVIGATION_CATEGORIES: SystemNavigationCategory[] = [
         title: 'Guide',
         items: [
             {
-                name: 'Primeiros Passos',
+                name: 'Introdução',
                 route: ''
             },
             {
-                name: 'Instalação',
+                name: 'Começando com o Projeto',
                 route: ''
             },
+            {
+                name: 'Padrões de Código',
+                route: ''
+            },
+            {
+                name: 'Tipagem e Modelos',
+                route: ''
+            },
+            {
+                name: 'Boas Práticas de Acessibilidade',
+                route: ''
+            }
         ]
     },
     {
@@ -28,11 +40,40 @@ export const SYSTEM_NAVIGATION_CATEGORIES: SystemNavigationCategory[] = [
             {
                 name: 'Listas',
                 route: ''
+            },
+            {
+                name: 'Tabelas Interativas',
+                route: ''
+            },
+            {
+                name: 'Inputs Personalizados',
+                route: ''
+            },
+            {
+                name: 'Modais Animados',
+                route: ''
+            },
+            {
+                name: 'Tooltips Inteligentes',
+                route: ''
+            },
+            {
+                name: 'Layouts em Grid',
+                route: ''
+            },
+            {
+                name: 'Carrossel de Imagens',
+                route: ''
             }
         ]
     },
     {
         title: 'Showcase',
-        items: []
+        items: [
+            {
+                name: 'Tema Personalizado',
+                route: ''
+            }
+        ]
     }
 ];
