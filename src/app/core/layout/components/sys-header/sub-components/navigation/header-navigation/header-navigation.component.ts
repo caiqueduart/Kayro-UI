@@ -4,14 +4,14 @@ import {NavCategoryItemDirective} from "../directives/nav-category-item.directiv
 import {RouterLink} from "@angular/router";
 
 @Component({
-  selector: 'kay-header-navigation',
+    selector: 'kay-header-navigation',
     imports: [
         NavCategoryComponent,
         NavCategoryItemDirective,
         RouterLink
     ],
-  templateUrl: './header-navigation.component.html',
-  styleUrl: './header-navigation.component.scss'
+    templateUrl: './header-navigation.component.html',
+    styleUrl: './header-navigation.component.scss'
 })
 export class HeaderNavigationComponent {
 

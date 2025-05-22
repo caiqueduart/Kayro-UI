@@ -11,8 +11,14 @@
         }
     }
 
-    @if($device == 'desktop') {
+    @if($device == 'laptop') {
         @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if($device == 'desktop') {
+        @media (min-width: 1201px) {
             @content;
         }
     }

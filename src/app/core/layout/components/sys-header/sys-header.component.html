@@ -13,6 +13,16 @@
             <section class="sys-header-content-menu-social-area">
                 <kay-menu-social></kay-menu-social>
             </section>
+
+            <section class="sys-header-content-menu-collapsed">
+                <button mat-icon-button [matMenuTriggerFor]="collapsedMenu">
+                    <mat-icon>more_horiz</mat-icon>
+                </button>
+
+                <mat-menu #collapsedMenu>
+                    <kay-menu-collapsed></kay-menu-collapsed>
+                </mat-menu>
+            </section>
         </menu>
     </div>
 </div>

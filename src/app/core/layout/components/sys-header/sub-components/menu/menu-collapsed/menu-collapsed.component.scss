@@ -1,0 +1,19 @@
+.header-menu-collapsed {
+    &-toggle-theme {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--kay-sys-color-outline-variant);
+        padding: 16px;
+        gap: 8px;
+
+        p {
+            margin: 0;
+            font-size: 0.875rem;
+            color: var(--kay-sys-color-outline);
+        }
+    }
+
+    &-social {
+        padding: 16px;
+    }
+}

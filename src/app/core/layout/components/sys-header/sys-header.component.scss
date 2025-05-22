@@ -21,10 +21,25 @@
             align-items: center;
             gap: 24px;
             margin: 0;
+
+            &-collapsed {
+                display: none;
+                max-height: 24px;
+                margin-top: -16px;
+            }
         }
 
-        @include responsive-device('desktop') {
+        @include responsive-device('laptop') {
+            &-menu {
+                &-social-area,
+                &-theme-button {
+                    display: none;
+                }
 
+                &-collapsed {
+                    display: block;
+                }
+            }
         }
     }
 }

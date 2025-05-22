@@ -9,3 +9,7 @@
     unselected-with-icon-handle-horizontal-margin: 0 0 0 2px,
     selected-with-icon-handle-horizontal-margin: 0 22px,
 ));
+
+@include mat.menu-overrides((
+    container-shape: 16px
+));
