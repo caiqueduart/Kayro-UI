@@ -32,6 +32,8 @@
 
         &-toggle-sys-sidenav {
             display: none;
+            max-height: 24px;
+            margin-top: -16px;
         }
 
         @include responsive-device('laptop') {
@@ -55,6 +57,12 @@
             &-menu {
                 &-nav {
                     display: none;
+                }
+
+                &-collapsed {
+                    .mat-icon {
+                        transform: rotate(90deg);
+                    }
                 }
             }
         }
