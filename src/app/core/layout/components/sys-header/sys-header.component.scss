@@ -19,6 +19,7 @@
         &-menu {
             display: flex;
             align-items: center;
+            padding: 0;
             gap: 24px;
             margin: 0;
 
@@ -27,6 +28,10 @@
                 max-height: 24px;
                 margin-top: -16px;
             }
+        }
+
+        &-toggle-sys-sidenav {
+            display: none;
         }
 
         @include responsive-device('laptop') {
@@ -38,6 +43,18 @@
 
                 &-collapsed {
                     display: block;
+                }
+            }
+        }
+
+        @include responsive-device('tablet') {
+            &-toggle-sys-sidenav {
+                display: block;
+            }
+
+            &-menu {
+                &-nav {
+                    display: none;
                 }
             }
         }

@@ -1,6 +1,14 @@
 <div class="sys-header">
     <div class="sys-header-content">
-        <span class="sys-header-content-brand">Kayro UI</span>
+        <button
+            mat-icon-button
+            class="sys-header-content-toggle-sys-sidenav"
+            (click)="toggleSystemSidenav()">
+            <mat-icon>menu</mat-icon>
+        </button>
+
+        <span class="sys-header-content-brand" aria-hidden="true">Kayro UI</span>
+
         <menu class="sys-header-content-menu">
             <nav class="sys-header-content-menu-nav">
                 <kay-header-navigation></kay-header-navigation>
