@@ -1,6 +1,9 @@
 <div class="sys-sidenav">
-    <mat-accordion class="sys-sidenav-navigation" multi>
+    <button mat-icon-button (click)="toggleSystemSidenav()">
+        <mat-icon>close</mat-icon>
+    </button>
 
+    <mat-accordion class="sys-sidenav-navigation" multi>
         @for (category of systemNavigationCategories; track category) {
             <mat-expansion-panel class="sys-sidenav-navigation-item">
                 <mat-expansion-panel-header class="sys-sidenav-navigation-dropdown-toggle">

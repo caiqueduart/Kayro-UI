@@ -1,6 +1,10 @@
 .system {
     height: 100%;
 
+    &-sidenav {
+        width: 100%;
+    }
+
     &-content {
         &-main {
             overflow-x: clip;
