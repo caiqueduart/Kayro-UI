@@ -47,11 +47,11 @@
                     width: auto;
                     height: auto;
                     font-size: 10rem;
-                    background:
-                        linear-gradient(
-                            115deg,
-                            var(--kay-sys-color-surface-container)
-                            0%, var(--kay-sys-color-surface-bright) 100%);
+                    background: linear-gradient(
+                        115deg,
+                        var(--kay-sys-color-surface-container) 0%,
+                        var(--kay-sys-color-surface-bright) 100%
+                    );
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }

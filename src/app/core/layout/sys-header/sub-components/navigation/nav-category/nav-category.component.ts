@@ -1,16 +1,14 @@
-import {Component, Input} from '@angular/core';
-import {NgClass} from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 @Component({
     selector: 'kay-nav-category',
-    imports: [
-        NgClass,
-    ],
+    imports: [NgClass],
     templateUrl: './nav-category.component.html',
-    styleUrl: './nav-category.component.scss'
+    styleUrl: './nav-category.component.scss',
 })
 export class NavCategoryComponent {
-    @Input({required: true}) title!: string;
+    @Input({ required: true }) title!: string;
 
     isHidden: boolean = true;
 

@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import {RouterOutlet} from '@angular/router';
-import {SysHeaderComponent} from './core/layout/sys-header/sys-header.component';
-import {SysFooterComponent} from './core/layout/sys-footer/sys-footer.component';
-import {MatSidenav, MatSidenavContainer, MatSidenavContent} from '@angular/material/sidenav';
-import {SysSidenavComponent} from './core/layout/sys-sidenav/sys-sidenav.component';
+import { RouterOutlet } from '@angular/router';
+import { SysHeaderComponent } from './core/layout/sys-header/sys-header.component';
+import { SysFooterComponent } from './core/layout/sys-footer/sys-footer.component';
+import {
+    MatSidenav,
+    MatSidenavContainer,
+    MatSidenavContent,
+} from '@angular/material/sidenav';
+import { SysSidenavComponent } from './core/layout/sys-sidenav/sys-sidenav.component';
 
 @Component({
-  selector: 'app-root',
+    selector: 'app-root',
     imports: [
         RouterOutlet,
         SysHeaderComponent,
@@ -14,9 +18,9 @@ import {SysSidenavComponent} from './core/layout/sys-sidenav/sys-sidenav.compone
         MatSidenavContainer,
         SysSidenavComponent,
         MatSidenav,
-        MatSidenavContent
+        MatSidenavContent,
     ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
 })
-export class AppComponent { }
+export class AppComponent {}

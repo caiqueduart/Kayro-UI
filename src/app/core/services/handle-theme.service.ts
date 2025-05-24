@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root',
 })
 export class HandleThemeService {
     toggleTheme(): void {
         const bodyClassList = document.querySelector('body')?.classList;
-        const bodyClassListContainsDarkTheme = bodyClassList?.contains('dark-theme');
+        const bodyClassListContainsDarkTheme =
+            bodyClassList?.contains('dark-theme');
 
-        if(bodyClassListContainsDarkTheme) {
+        if (bodyClassListContainsDarkTheme) {
             bodyClassList?.remove('dark-theme');
             bodyClassList?.add('light-theme');
         } else {

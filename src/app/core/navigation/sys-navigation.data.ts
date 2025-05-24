@@ -6,74 +6,74 @@ export const SYSTEM_NAVIGATION_CATEGORIES: SystemNavigationCategory[] = [
         items: [
             {
                 name: 'Introdução',
-                route: ''
+                route: '',
             },
             {
                 name: 'Começando com o Projeto',
-                route: ''
+                route: '',
             },
             {
                 name: 'Padrões de Código',
-                route: ''
+                route: '',
             },
             {
                 name: 'Tipagem e Modelos',
-                route: ''
+                route: '',
             },
             {
                 name: 'Boas Práticas de Acessibilidade',
-                route: ''
-            }
-        ]
+                route: '',
+            },
+        ],
     },
     {
         title: 'Componentes',
         items: [
             {
                 name: 'Botões Animados',
-                route: ''
+                route: '',
             },
             {
                 name: 'Cards Responsivos',
-                route: ''
+                route: '',
             },
             {
                 name: 'Listas',
-                route: ''
+                route: '',
             },
             {
                 name: 'Tabelas Interativas',
-                route: ''
+                route: '',
             },
             {
                 name: 'Inputs Personalizados',
-                route: ''
+                route: '',
             },
             {
                 name: 'Modais Animados',
-                route: ''
+                route: '',
             },
             {
                 name: 'Tooltips Inteligentes',
-                route: ''
+                route: '',
             },
             {
                 name: 'Layouts em Grid',
-                route: ''
+                route: '',
             },
             {
                 name: 'Carrossel de Imagens',
-                route: ''
-            }
-        ]
+                route: '',
+            },
+        ],
     },
     {
         title: 'Showcase',
         items: [
             {
                 name: 'Tema Personalizado',
-                route: ''
-            }
-        ]
-    }
+                route: '',
+            },
+        ],
+    },
 ];

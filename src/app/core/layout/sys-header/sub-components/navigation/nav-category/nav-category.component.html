@@ -1,17 +1,23 @@
-<div class="header-nav-category"
-     (mouseover)="openItemsList()"
-     (mouseleave)="closeItemsList()"
-     (click)="toggleItemsList()">
-
+<div
+    class="header-nav-category"
+    (mouseover)="openItemsList()"
+    (mouseleave)="closeItemsList()"
+    (click)="toggleItemsList()"
+>
     <button class="header-nav-category-name" aria-expanded="true">
         {{ title }}
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-            <path d="M1 1L5 5L9 1" stroke="#EDE0D4" stroke-linecap="round"/>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="10"
+            height="6"
+            viewBox="0 0 10 6"
+            fill="none"
+        >
+            <path d="M1 1L5 5L9 1" stroke="#EDE0D4" stroke-linecap="round" />
         </svg>
     </button>
 
-    <div class="header-nav-category-list"
-        [ngClass]="{ isHidden }">
+    <div class="header-nav-category-list" [ngClass]="{ isHidden }">
         <div>
             <ng-content select="a[kay-header-nav-category-item]"></ng-content>
         </div>

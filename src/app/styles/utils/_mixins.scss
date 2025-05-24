@@ -1,23 +1,23 @@
 @mixin responsive-device($device) {
-    @if($device == 'mobile') {
+    @if ($device == 'mobile') {
         @media (max-width: 480px) {
             @content;
         }
     }
 
-    @if($device == 'tablet') {
+    @if ($device == 'tablet') {
         @media (max-width: 768px) {
             @content;
         }
     }
 
-    @if($device == 'laptop') {
+    @if ($device == 'laptop') {
         @media (max-width: 1200px) {
             @content;
         }
     }
 
-    @if($device == 'desktop') {
+    @if ($device == 'desktop') {
         @media (min-width: 1201px) {
             @content;
         }

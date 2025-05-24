@@ -1,9 +1,18 @@
 <mat-sidenav-container class="system">
-    <mat-sidenav class="system-sidenav" mode="side" #systemSidenav opened="true">
+    <mat-sidenav
+        class="system-sidenav"
+        mode="side"
+        #systemSidenav
+        opened="true"
+    >
         <kay-sys-sidenav [systemSidenav]="systemSidenav"></kay-sys-sidenav>
     </mat-sidenav>
     <mat-sidenav-content class="system-content">
-        <header kay-sys-header class="system-content-header" [systemSidenav]="systemSidenav"></header>
+        <header
+            kay-sys-header
+            class="system-content-header"
+            [systemSidenav]="systemSidenav"
+        ></header>
         <main class="system-content-main">
             <router-outlet></router-outlet>
         </main>

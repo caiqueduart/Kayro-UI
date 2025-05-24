@@ -4,29 +4,33 @@
 @use 'app/styles/global/_sys-header';
 @use 'app/styles/overrides/_angular-materials';
 @use 'app/styles/global/variables';
-@use "app/styles/utils/shapes";
+@use 'app/styles/utils/shapes';
 
 :root {
     .dark-theme {
-        @include mat.theme((
-            color: (
-                theme-type: dark,
-            ),
-            typography: Inter,
-            density: 0,
-        ));
+        @include mat.theme(
+            (
+                color: (
+                    theme-type: dark,
+                ),
+                typography: Inter,
+                density: 0,
+            )
+        );
         @include mat.theme-overrides(dark-theme.$colors-roles);
         @include dark-theme.colors-variables;
     }
 
     .light-theme {
-        @include mat.theme((
-            color: (
-                theme-type: light,
-            ),
-            typography: Inter,
-            density: 0,
-        ));
+        @include mat.theme(
+            (
+                color: (
+                    theme-type: light,
+                ),
+                typography: Inter,
+                density: 0,
+            )
+        );
         @include mat.theme-overrides(light-theme.$colors-roles);
         @include light-theme.colors-variables;
     }
@@ -34,11 +38,12 @@
 
 * {
     box-sizing: border-box;
-    font-family: Inter, "Arial", sans-serif;
+    font-family: Inter, 'Arial', sans-serif;
     color: var(--kay-sys-color-on-surface);
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-size: 16px;
 }
