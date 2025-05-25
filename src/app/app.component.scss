@@ -6,7 +6,7 @@
     &-sidenav {
         width: 300px;
 
-        @include responsive-device('mobile') {
+        @include responsive-device('tablet') {
             width: 100%;
         }
     }

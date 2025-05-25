@@ -21,7 +21,7 @@
             margin-right: -16px;
             display: none;
 
-            @include responsive-device('mobile') {
+            @include responsive-device('tablet') {
                 display: block;
             }
         }
