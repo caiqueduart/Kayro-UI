@@ -1,13 +1,21 @@
 <div class="sys-sidenav">
-    <button mat-icon-button (click)="toggleSystemSidenav()">
-        <mat-icon>close</mat-icon>
-    </button>
+    <menu class="sys-sidenav-menu">
+        <p class="sys-sidenav-menu-brand">Kayro UI</p>
+        <button
+            mat-icon-button
+            class="sys-sidenav-menu-close-button"
+            matTooltip="Fechar menu lateral"
+            (click)="closeSystemSidenav()"
+        >
+            <mat-icon>close</mat-icon>
+        </button>
+    </menu>
 
     <mat-accordion class="sys-sidenav-navigation" multi>
         @for (category of systemNavigationCategories; track category) {
             <mat-expansion-panel class="sys-sidenav-navigation-item">
                 <mat-expansion-panel-header
-                    class="sys-sidenav-navigation-dropdown-toggle"
+                    class="sys-sidenav-navigation-item-dropdown-toggle"
                 >
                     <mat-panel-title>{{ category.title }}</mat-panel-title>
                 </mat-expansion-panel-header>

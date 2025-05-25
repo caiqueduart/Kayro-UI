@@ -1,0 +1,53 @@
+@use '@angular/material' as mat;
+@use 'utils/mixins' as *;
+
+.sys-sidenav {
+    @include mat.expansion-overrides(
+        (
+            container-shape: 0,
+        )
+    );
+
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        height: var(--system-header-height);
+        align-items: center;
+        padding: 0 24px;
+        margin: 0;
+        border-bottom: 1px solid var(--kay-sys-color-outline-variant);
+
+        &-close-button {
+            margin-right: -16px;
+            display: none;
+
+            @include responsive-device('mobile') {
+                display: block;
+            }
+        }
+    }
+
+    &-navigation {
+        &-item {
+            &-dropped-list {
+                padding: 0;
+                list-style: none;
+                margin-top: -8px;
+
+                li {
+                    padding: 6px 12px;
+
+                    a {
+                        text-decoration: none;
+                        transition: 0.3s;
+                        opacity: 0.75;
+
+                        &:hover {
+                            color: var(--kay-sys-color-primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

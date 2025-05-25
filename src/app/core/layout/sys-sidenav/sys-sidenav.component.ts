@@ -10,6 +10,7 @@ import { RouterLink } from '@angular/router';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
 import { MatSidenav } from '@angular/material/sidenav';
+import { MatTooltip } from '@angular/material/tooltip';
 
 @Component({
     selector: 'kay-sys-sidenav',
@@ -21,6 +22,7 @@ import { MatSidenav } from '@angular/material/sidenav';
         RouterLink,
         MatIcon,
         MatIconButton,
+        MatTooltip,
     ],
     templateUrl: './sys-sidenav.component.html',
     styleUrl: './sys-sidenav.component.scss',
@@ -29,7 +31,7 @@ export class SysSidenavComponent {
     @Input() systemSidenav!: MatSidenav;
     readonly systemNavigationCategories = SYSTEM_NAVIGATION_CATEGORIES;
 
-    toggleSystemSidenav(): void {
-        this.systemSidenav.toggle().then();
+    closeSystemSidenav(): void {
+        this.systemSidenav.close().then();
     }
 }

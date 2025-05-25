@@ -1,8 +1,14 @@
+@use 'utils/mixins' as *;
+
 .system {
     height: 100%;
 
     &-sidenav {
-        width: 100%;
+        width: 300px;
+
+        @include responsive-device('mobile') {
+            width: 100%;
+        }
     }
 
     &-content {

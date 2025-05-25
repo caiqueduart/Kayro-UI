@@ -2,18 +2,21 @@
 
 .sys-header {
     border-bottom: 1px solid var(--kay-sys-color-outline-variant);
+    height: var(--system-header-height);
     user-select: none;
-    padding: 20px;
+    padding: 16px;
 
     &-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100%;
         max-width: 1376px;
         margin: auto;
 
         &-brand {
             font-weight: 700;
+            white-space: nowrap;
         }
 
         &-menu {
