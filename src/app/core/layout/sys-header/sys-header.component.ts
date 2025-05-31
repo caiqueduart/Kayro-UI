@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { MenuToggleThemeComponent } from './sub-components/menu/menu-toggle-theme/menu-toggle-theme.component';
+import { ToggleThemeButtonComponent } from './sub-components/menu/toggle-theme-button/toggle-theme-button.component';
 import { HeaderNavigationComponent } from './sub-components/navigation/header-navigation/header-navigation.component';
 import { MenuSocialComponent } from './sub-components/menu/menu-social/menu-social.component';
 import { MatIcon } from '@angular/material/icon';
@@ -11,7 +11,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 @Component({
     selector: 'header[kay-sys-header]',
     imports: [
-        MenuToggleThemeComponent,
+        ToggleThemeButtonComponent,
         HeaderNavigationComponent,
         MenuSocialComponent,
         MatIcon,
