@@ -5,12 +5,13 @@ import {
     MatExpansionPanelHeader,
     MatExpansionPanelTitle,
 } from '@angular/material/expansion';
-import { SYSTEM_NAVIGATION_CATEGORIES } from '../../navigation/sys-navigation.data';
+import { SYSTEM_NAVIGATION_CATEGORIES } from '../../sys-navigation/sys-navigation.data';
 import { RouterLink } from '@angular/router';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
 import { MatSidenav } from '@angular/material/sidenav';
 import { MatTooltip } from '@angular/material/tooltip';
+import { NavCategoryItemDirective } from '../../sys-navigation/directives/nav-category-item.directive';
 
 @Component({
     selector: 'kay-sys-sidenav',
@@ -23,6 +24,7 @@ import { MatTooltip } from '@angular/material/tooltip';
         MatIcon,
         MatIconButton,
         MatTooltip,
+        NavCategoryItemDirective,
     ],
     templateUrl: './sys-sidenav.component.html',
     styleUrl: './sys-sidenav.component.scss',

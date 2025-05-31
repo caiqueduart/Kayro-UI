@@ -3,9 +3,9 @@ import { MatTooltip } from '@angular/material/tooltip';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
-    selector: 'kay-menu-social',
+    selector: 'kay-social-menu',
     imports: [MatTooltip, NgOptimizedImage],
-    templateUrl: './menu-social.component.html',
-    styleUrl: './menu-social.component.scss',
+    templateUrl: './social-menu.component.html',
+    styleUrl: './social-menu.component.scss',
 })
-export class MenuSocialComponent {}
+export class SocialMenuComponent {}

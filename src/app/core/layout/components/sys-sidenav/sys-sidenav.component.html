@@ -23,9 +23,11 @@
                 <ul class="sys-sidenav-navigation-item-dropped-list">
                     @for (categoryItem of category.items; track categoryItem) {
                         <li>
-                            <a [routerLink]="categoryItem.route">{{
-                                categoryItem.name
-                            }}</a>
+                            <a
+                                kay-nav-category-item
+                                [routerLink]="categoryItem.route"
+                                >{{ categoryItem.name }}</a
+                            >
                         </li>
                     }
                 </ul>

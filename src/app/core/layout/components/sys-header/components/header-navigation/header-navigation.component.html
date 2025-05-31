@@ -2,10 +2,7 @@
     @for (category of systemNavigationCategories; track category) {
         <kay-nav-category [title]="category.title">
             @for (categoryItem of category.items; track categoryItem) {
-                <a
-                    [routerLink]="categoryItem.route"
-                    kay-header-nav-category-item
-                >
+                <a [routerLink]="categoryItem.route" kay-nav-category-item>
                     {{ categoryItem.name }}
                 </a>
             }

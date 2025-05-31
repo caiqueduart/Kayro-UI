@@ -30,23 +30,9 @@
     &-navigation {
         &-item {
             &-dropped-list {
-                padding: 0;
+                padding: 0 0 0 16px;
                 list-style: none;
                 margin-top: -8px;
-
-                li {
-                    padding: 6px 12px;
-
-                    a {
-                        text-decoration: none;
-                        transition: 0.3s;
-                        opacity: 0.75;
-
-                        &:hover {
-                            color: var(--kay-sys-color-primary);
-                        }
-                    }
-                }
             }
         }
     }

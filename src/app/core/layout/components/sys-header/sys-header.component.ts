@@ -1,24 +1,24 @@
 import { Component, Input } from '@angular/core';
-import { ToggleThemeButtonComponent } from './sub-components/menu/toggle-theme-button/toggle-theme-button.component';
-import { HeaderNavigationComponent } from './sub-components/navigation/header-navigation/header-navigation.component';
-import { MenuSocialComponent } from './sub-components/menu/menu-social/menu-social.component';
+import { ToggleThemeButtonComponent } from './components/menu/toggle-theme-button/toggle-theme-button.component';
+import { SocialMenuComponent } from './components/menu/social-menu/social-menu.component';
 import { MatIcon } from '@angular/material/icon';
 import { MatIconButton } from '@angular/material/button';
 import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
-import { MenuCollapsedComponent } from './sub-components/menu/menu-collapsed/menu-collapsed.component';
+import { CollapsedMenuComponent } from './components/menu/collapsed-menu/collapsed-menu.component';
 import { MatSidenav } from '@angular/material/sidenav';
+import { HeaderNavigationComponent } from './components/header-navigation/header-navigation.component';
 
 @Component({
     selector: 'header[kay-sys-header]',
     imports: [
         ToggleThemeButtonComponent,
         HeaderNavigationComponent,
-        MenuSocialComponent,
+        SocialMenuComponent,
         MatIcon,
         MatIconButton,
         MatMenu,
         MatMenuTrigger,
-        MenuCollapsedComponent,
+        CollapsedMenuComponent,
     ],
     templateUrl: './sys-header.component.html',
     styleUrl: './sys-header.component.scss',
