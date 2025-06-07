@@ -1,25 +1,24 @@
+@use 'utils/mixins' as *;
+
 .kay-ui-intro {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 
     &-content {
-        max-width: 500px;
-
         &-title,
         &-subtitle {
             margin: 0;
+            font-size: 4rem;
         }
 
         &-title {
             background: var(--linear-primary-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 4rem;
         }
 
         &-subtitle {
-            font-size: 3.5rem;
             line-height: 1;
         }
 
@@ -30,6 +29,7 @@
 
         &-buttons {
             display: flex;
+            flex-wrap: wrap;
             gap: 16px;
 
             button:not(:first-child) {
@@ -43,12 +43,73 @@
         position: relative;
         pointer-events: none;
         user-select: none;
+        justify-self: end;
 
         &-shine {
             position: absolute;
             right: -120px;
             bottom: -200px;
             animation: shining 20s infinite ease-in-out;
+        }
+    }
+
+    @include responsive-device('laptop') {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 40px;
+
+        &-content {
+            grid-column: 2 / 1;
+
+            &-title,
+            &-subtitle,
+            &-description {
+                text-align: center;
+            }
+
+            &-buttons {
+                justify-content: center;
+            }
+        }
+
+        &-brand {
+            grid-area: 1 / 1;
+            justify-self: center;
+        }
+    }
+
+    @include responsive-device('tablet') {
+        &-content {
+            &-title,
+            &-subtitle {
+                font-size: 3rem;
+            }
+
+            &-description {
+                font-size: 1.5rem;
+                margin: 16px 0 24px 0;
+            }
+        }
+
+        &-brand {
+            scale: 0.8;
+        }
+    }
+
+    @include responsive-device('mobile') {
+        &-content {
+            &-title,
+            &-subtitle {
+                font-size: 2rem;
+            }
+
+            &-description {
+                font-size: 1.125rem;
+            }
+        }
+
+        &-brand {
+            display: none;
         }
     }
 }
