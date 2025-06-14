@@ -8,8 +8,7 @@
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
         "build:prod": "ng build --configuration production",
-        "deploy:prod": "ng deploy --base-href=/Kayro-UI/",
-        "build:deploy": "npm run build:prod && npm run deploy:prod"
+        "deploy:prod": "ng deploy --base-href=/Kayro-UI/"
     },
     "private": true,
     "dependencies": {
