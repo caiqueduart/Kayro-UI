@@ -5,6 +5,12 @@
     height: var(--system-header-height);
     user-select: none;
     padding: 16px;
+    backdrop-filter: blur(16px);
+    background-color: color-mix(
+        in srgb,
+        var(--kay-sys-color-surface) 60%,
+        transparent
+    );
 
     &-content {
         display: flex;
