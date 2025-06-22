@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--kay-sys-color-surface-variant);
+    border-radius: var(--medium-border-radius);
+    z-index: 999999;
+}
+
+::-webkit-scrollbar-thumb:hover {
+}

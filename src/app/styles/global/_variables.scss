@@ -5,8 +5,14 @@
     --hight-border-radius: 32px;
 
     /*--- GRADIENTS ---*/
-    --linear-primary-gradient: linear-gradient(
+    --linear-primary-gradient-90: linear-gradient(
         90deg,
+        rgba(242, 68, 5, 1) 0%,
+        rgba(237, 106, 17, 1) 100%
+    );
+
+    --linear-primary-gradient-180: linear-gradient(
+        180deg,
         rgba(242, 68, 5, 1) 0%,
         rgba(237, 106, 17, 1) 100%
     );

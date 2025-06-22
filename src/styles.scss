@@ -3,6 +3,7 @@
 @use 'app/styles/themes/light-theme' as light-theme;
 @use 'app/styles/global/sys-nav';
 @use 'app/styles/overrides/_angular-materials';
+@use 'app/styles/overrides/_webkit';
 @use 'app/styles/global/variables';
 @use 'app/styles/utils/shapes';
 
