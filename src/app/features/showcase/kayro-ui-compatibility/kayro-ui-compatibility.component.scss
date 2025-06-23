@@ -1,5 +1,8 @@
+@use 'utils/mixins' as *;
+
 .kay-ui-compatibility {
     margin: auto;
+
     &-title {
         font-size: 2.625rem;
         font-weight: 400;
@@ -47,6 +50,12 @@
                 font-size: 2rem;
                 opacity: 0.6;
             }
+        }
+    }
+
+    @include responsive-device('laptop') {
+        &-frameworks-list {
+            gap: 40px;
         }
     }
 }
