@@ -1,0 +1,6 @@
+@use 'styles/sys-nav' as *;
+
+/* sidenav */
+.kay-nav-category-item {
+    @include kay-nav-category-item-style();
+}

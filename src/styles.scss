@@ -1,11 +1,8 @@
 @use '@angular/material' as mat;
-@use 'app/styles/themes/dark-theme' as dark-theme;
-@use 'app/styles/themes/light-theme' as light-theme;
-@use 'app/styles/global/sys-nav';
-@use 'app/styles/overrides/_angular-materials';
-@use 'app/styles/overrides/_webkit';
-@use 'app/styles/global/variables';
-@use 'app/styles/utils/shapes';
+@use 'app/styles/global/_module' as global;
+@use 'app/styles/themes/_module' as themes;
+@use 'app/styles/utils/_module' as utils;
+@use 'app/styles/overwrite/_module';
 
 :root {
     .dark-theme {
@@ -18,8 +15,9 @@
                 density: 0,
             )
         );
-        @include mat.theme-overrides(dark-theme.$colors-roles);
-        @include dark-theme.colors-variables;
+
+        @include mat.theme-overrides(themes.$dark-theme-colors-roles);
+        @include themes.dark-theme-colors-variables();
     }
 
     .light-theme {
@@ -32,9 +30,12 @@
                 density: 0,
             )
         );
-        @include mat.theme-overrides(light-theme.$colors-roles);
-        @include light-theme.colors-variables;
+
+        @include mat.theme-overrides(themes.$light-theme-colors-roles);
+        @include themes.light-theme-colors-variables;
     }
+
+    @include global.variables-references();
 }
 
 * {

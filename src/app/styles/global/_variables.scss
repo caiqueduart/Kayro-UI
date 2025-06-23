@@ -1,22 +1,21 @@
-:root {
-    /*--- BORDER RADIUS ---*/
+@mixin references {
+    /*---------------------------- BORDER RADIUS ----------------------------*/
     --low-border-radius: 8px;
     --medium-border-radius: 16px;
     --hight-border-radius: 32px;
 
-    /*--- GRADIENTS ---*/
+    /*---------------------------- GRADIENTS ----------------------------*/
     --linear-primary-gradient-90: linear-gradient(
         90deg,
         rgba(242, 68, 5, 1) 0%,
         rgba(237, 106, 17, 1) 100%
     );
-
     --linear-primary-gradient-180: linear-gradient(
         180deg,
         rgba(242, 68, 5, 1) 0%,
         rgba(237, 106, 17, 1) 100%
     );
 
-    /*--- SIZES ---*/
+    /*---------------------------- SIZES ----------------------------*/
     --system-header-height: 60px;
 }
