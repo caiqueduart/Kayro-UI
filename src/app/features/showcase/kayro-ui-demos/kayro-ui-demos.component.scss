@@ -15,8 +15,9 @@
     }
 
     &-showcase {
-        width: 1080px;
-        height: 600px;
+        width: 100%;
+        height: auto;
+        padding: 64px;
         background-color: #000000;
         border-radius: var(--medium-border-radius);
         margin-top: 40px;
