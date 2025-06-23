@@ -1,3 +1,5 @@
+@use 'utils/mixins' as *;
+
 .kay-ui-features {
     &-list {
         display: flex;
@@ -8,7 +10,6 @@
 
         &-item {
             width: 340px;
-            height: 200px;
             list-style: none;
             background-color: var(--kay-sys-color-surface-container);
             border-radius: var(--medium-border-radius);
@@ -38,23 +39,8 @@
                 color: var(--kay-sys-color-on-surface-variant);
             }
 
-            &:nth-child(4) {
-                width: 710px;
-                display: flex;
-                justify-content: space-between;
-
-                .mat-icon {
-                    width: auto;
-                    height: auto;
-                    font-size: 10rem;
-                    background: linear-gradient(
-                        115deg,
-                        var(--kay-sys-color-surface-container) 0%,
-                        var(--kay-sys-color-surface-bright) 100%
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
+            .code-decorator {
+                display: none;
             }
 
             &:hover {
@@ -67,6 +53,49 @@
                     font-size: 3em;
                     padding: 0;
                 }
+            }
+        }
+    }
+
+    @include responsive-device('desktop') {
+        &-list {
+            &-item {
+                &:nth-child(4) {
+                    width: 710px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .code-decorator {
+                        display: block;
+                    }
+
+                    .mat-icon {
+                        width: auto;
+                        height: auto;
+                        font-size: 10rem;
+                        background: linear-gradient(
+                            115deg,
+                            var(--kay-sys-color-surface-container) 0%,
+                            var(--kay-sys-color-surface-bright) 100%
+                        );
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive-device('laptop') {
+        &-list {
+            justify-content: center;
+        }
+    }
+
+    @include responsive-device('tablet') {
+        &-list {
+            &-item {
+                width: 100%;
             }
         }
     }
