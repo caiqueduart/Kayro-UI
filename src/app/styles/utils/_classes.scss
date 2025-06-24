@@ -19,4 +19,8 @@
     @include responsive-device('tablet') {
         font-size: 2rem;
     }
+
+    @include responsive-device('mobile') {
+        font-size: 1.75rem;
+    }
 }
