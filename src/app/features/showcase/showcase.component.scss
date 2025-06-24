@@ -1,14 +1,16 @@
-.showcase {
-    max-width: 1080px;
-    margin: auto;
+@use 'utils/mixins' as *;
 
-    &-intro,
-    &-features {
-        margin-top: 120px;
+.showcase {
+    max-width: var(--system-max-width);
+    display: grid;
+    margin: auto;
+    gap: 128px;
+
+    &-intro {
+        margin-top: calc(var(--system-header-height) * 2);
     }
 
-    &-compatibility,
-    &-demos {
-        margin-top: 180px;
+    @include responsive-device('mobile') {
+        gap: 64px;
     }
 }

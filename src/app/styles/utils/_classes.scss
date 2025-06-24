@@ -1,5 +1,22 @@
-/*---------------------------- GRADIENTS ----------------------------*/
+@use 'utils/mixins' as *;
 
+/*---------------------------- GRADIENTS ----------------------------*/
 .gradient-button {
     background: var(--linear-primary-gradient-90) !important;
+}
+
+/*---------------------------- TYPOGRAPH ----------------------------*/
+.styled-title {
+    font-size: 2.625rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+
+    span {
+        color: var(--kay-sys-color-primary);
+    }
+
+    @include responsive-device('tablet') {
+        font-size: 2rem;
+    }
 }
