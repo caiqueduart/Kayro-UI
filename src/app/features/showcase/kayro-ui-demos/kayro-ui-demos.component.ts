@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { DragAnimalsComponent } from './components/drag-animals/drag-animals.component';
+import { StickersComponent } from './components/stickers/stickers.component';
 
 @Component({
     selector: 'kay-ui-demos',
-    imports: [DragAnimalsComponent],
+    imports: [StickersComponent],
     templateUrl: './kayro-ui-demos.component.html',
     styleUrl: './kayro-ui-demos.component.scss',
 })

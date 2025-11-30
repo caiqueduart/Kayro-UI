@@ -3,9 +3,9 @@ import { CdkDrag } from '@angular/cdk/drag-drop';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
-    selector: 'kay-drag-animals',
+    selector: 'kay-stickers',
     imports: [CdkDrag, NgOptimizedImage],
-    templateUrl: './drag-animals.component.html',
-    styleUrl: './drag-animals.component.scss',
+    templateUrl: './stickers.component.html',
+    styleUrl: './stickers.component.scss',
 })
-export class DragAnimalsComponent {}
+export class StickersComponent {}
