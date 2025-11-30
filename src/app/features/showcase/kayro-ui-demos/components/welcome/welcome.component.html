@@ -1,4 +1,8 @@
 <div class="welcome">
-    <p class="welcome__title">Bem vindo!</p>
-    <p class="welcome__message">É um prazer te conhecer. ✨</p>
+    <p class="welcome__title" [ngClass]="{ 'anime-on-enter': startAnime }">
+        Bem vindo!
+    </p>
+    <p class="welcome__message" [ngClass]="{ 'anime-on-enter': startAnime }">
+        É um prazer te conhecer. ✨
+    </p>
 </div>

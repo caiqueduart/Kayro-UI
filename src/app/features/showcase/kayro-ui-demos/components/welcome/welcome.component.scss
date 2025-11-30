@@ -7,26 +7,41 @@
     &__message {
         margin: 0;
         width: fit-content;
-        animation: blur-fade-in 1s infinite;
+        opacity: 0;
     }
 
     &__title {
         font-size: 2.5rem;
         margin-bottom: 8px;
         font-weight: 600;
+
+        &.anime-on-enter {
+            animation-delay: 0.5s;
+        }
     }
 
     &__message {
         font-size: 1.25rem;
+
+        &.anime-on-enter {
+            animation-delay: 1s;
+        }
     }
+}
+
+.anime-on-enter {
+    animation: blur-fade-in 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes blur-fade-in {
     from {
         filter: blur(16px);
+        transform: translateY(24px);
     }
 
     to {
         filter: blur(0);
+        opacity: 1;
     }
 }
