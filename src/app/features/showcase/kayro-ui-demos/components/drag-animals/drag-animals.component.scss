@@ -3,7 +3,7 @@ $border-radius: 32px;
 .wall {
     display: grid;
     align-content: space-between;
-    border: 4px dashed var(--kay-sys-color-outline);
+    border: 4px dashed var(--kay-sys-color-surface-container);
     border-radius: $border-radius;
     background: rgb(8, 8, 8);
     height: 500px;
@@ -16,7 +16,7 @@ $border-radius: 32px;
 
 .inventory {
     height: fit-content;
-    background: var(--kay-sys-color-outline);
+    background: var(--kay-sys-color-surface-container);
     border-radius: 0 0 $border-radius $border-radius;
     justify-content: center;
     transform: scaleX(1.01);
