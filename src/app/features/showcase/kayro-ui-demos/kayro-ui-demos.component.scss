@@ -1,18 +1,14 @@
 .kay-ui-demos {
-    animation: appear-growing linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-
-    &-description {
+    &__description,
+    &__title {
+        animation: appear-growing linear;
+        animation-range: entry 0% cover 30%;
+        animation-timeline: view();
         text-align: center;
     }
+}
 
-    &-showcase {
-        width: 100%;
-        height: auto;
-        padding: 64px;
-        background-color: #000000;
-        border-radius: var(--medium-border-radius);
-        margin-top: 40px;
-    }
+.showcase {
+    display: block;
+    margin-top: 40px;
 }
