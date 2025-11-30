@@ -7,6 +7,7 @@
     &__message {
         margin: 0;
         width: fit-content;
+        animation: blur-fade-in 1s infinite;
     }
 
     &__title {
@@ -17,5 +18,15 @@
 
     &__message {
         font-size: 1.25rem;
+    }
+}
+
+@keyframes blur-fade-in {
+    from {
+        filter: blur(16px);
+    }
+
+    to {
+        filter: blur(0);
     }
 }
