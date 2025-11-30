@@ -1,0 +1,56 @@
+$border-radius: 32px;
+
+.wall {
+    display: grid;
+    align-content: space-between;
+    border: 4px dashed var(--kay-sys-color-outline);
+    border-radius: $border-radius;
+    background: rgb(8, 8, 8);
+    height: 500px;
+    width: 100%;
+
+    &__title {
+        text-align: center;
+    }
+}
+
+.inventory {
+    height: fit-content;
+    background: var(--kay-sys-color-outline);
+    border-radius: 0 0 $border-radius $border-radius;
+    justify-content: center;
+    transform: scaleX(1.01);
+    margin-bottom: -4px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.sticker {
+    width: 64px;
+    height: 64px;
+    cursor: grab;
+
+    &:hover {
+        animation: pulse 0.8s infinite;
+        filter: drop-shadow(0 0 0 white) drop-shadow(0 0 1px white)
+            drop-shadow(0 0 2px white);
+    }
+
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+@keyframes pulse {
+    50% {
+        scale: 1.02;
+        opacity: 1;
+    }
+
+    0%,
+    100% {
+        scale: 1;
+        opacity: 0.8;
+    }
+}
