@@ -1,3 +1,15 @@
 <div class="showcase-container">
-    <ng-content></ng-content>
+    <button
+        mat-icon-button
+        class="showcase-container__refresh-button"
+        matTooltip="Recarregar exibição"
+        [matTooltipShowDelay]="1000"
+        (click)="reload()"
+    >
+        <mat-icon>refresh</mat-icon>
+    </button>
+
+    @if (isLoaded) {
+        <ng-content></ng-content>
+    }
 </div>

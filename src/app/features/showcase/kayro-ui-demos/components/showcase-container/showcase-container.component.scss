@@ -3,5 +3,12 @@
     height: fit-content;
     background-color: black;
     border-radius: var(--medium-border-radius);
+    position: relative;
     padding: 64px;
+
+    &__refresh-button {
+        position: absolute;
+        right: 24px;
+        top: 24px;
+    }
 }
