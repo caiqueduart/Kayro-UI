@@ -1,14 +1,41 @@
+:host {
+    position: relative;
+}
+
 .showcase-container {
     width: 100%;
-    height: fit-content;
-    background-color: var(--kay-sys-color-black);
-    border-radius: var(--medium-border-radius);
-    position: relative;
     padding: 64px;
+    height: fit-content;
+    border-radius: var(--medium-border-radius);
+    backdrop-filter: blur(24px);
+    border: 1px solid #222222;
+    position: relative;
 
     &__refresh-button {
         position: absolute;
         right: 24px;
         top: 24px;
+    }
+}
+
+.showcase-backdrop {
+    width: 95%;
+    height: 90%;
+    overflow: hidden;
+    position: absolute;
+    border-radius: var(--medium-border-radius);
+    right: 2.5%;
+    top: 5%;
+
+    background-color: color-mix(
+        in srgb,
+        var(--kay-sys-color-black) 50%,
+        transparent
+    );
+
+    &__brand {
+        width: 50%;
+        height: 100%;
+        opacity: 0.25;
     }
 }
