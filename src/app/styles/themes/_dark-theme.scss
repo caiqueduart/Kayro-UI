@@ -54,6 +54,8 @@ $colors-roles: (
 
 @mixin colors-variables {
     & {
+        --kay-sys-color-black: black;
+        --kay-sys-color-white: white;
         --kay-sys-color-primary: #{map.get($colors-roles, primary)};
         --kay-sys-color-surface-tint: #{map.get($colors-roles, surface-tint)};
         --kay-sys-color-on-primary: #{map.get($colors-roles, on-primary)};
